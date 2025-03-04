@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Website Guna</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header class="navbar">
+      <div class="logo">
+        <a href="#">GUNA</a>
+      </div>
+      <nav class="nav-list">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#keahlian">Keahlian</a></li>
+          <li><a href="#testimoni">Testimoni</a></li>
+          <li><a href="#portofolio">Portofolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>   
+
+    <main>
+      <section class="content" id="content">
+          <div class="isi-content">
+              <h1 class="title">Hello, It's me <br> Guna Pandu Prilana</h1>
+              <p>
+                Seorang biasa yang memiliki minat dalam membangun aplikasi web 
+                yang efisien dan user-friendly, serta selalu bersemangat untuk 
+                mempelajari teknologi terbaru seperti HTML, CSS, Javascript, 
+                dan lainnya.
+              </p>
+              <div class="button-container">
+                  <a href="#about" class="btn solid">About me</a>
+                  <a href="#portofolio" class="btn outline">Portofolio</a>
+              </div>
+          </div>
+          
+          <aside class="image">
+              <img src="image/poto1.jpg">
+          </aside>
+      </section>
+
+      <section class="about" id="about">
+        <div class="about-container">
+            <img src="image/poto2.png" class="about-image">
+            <div class="about-content">
+                <h2 class="about-title"><span>About</span> me</h2>
+                <p class="about-text">
+                    Seorang Web Developer dengan pengalaman 20 tahun di UI/UX dan front-end development. 
+                    Spesialisasi saya meliputi HTML, CSS, JavaScript (React, Vue), serta optimasi performa 
+                    dan pengalaman pengguna untuk website yang responsif dan efisien.
+                </p>
+                <div class="button-container">
+                    <a href="#contact" class="btn outline">Contact me</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="keahlian" id="keahlian">
+        <h1 class="judul-keahlian">Keahlian</h1>
+        <div class="skill-container">
+            <div class="skill-card">
+                <img src="image/html.png" alt="HTML Logo">
+                <h3>HTML</h3>
+                <div class="progress-bar">
+                    <div class="progress html"></div>
+                </div>
+            </div>
+            <div class="skill-card">
+                <img src="image/css.png" alt="CSS Logo">
+                <h3>CSS</h3>
+                <div class="progress-bar">
+                    <div class="progress css"></div>
+                </div>
+            </div>
+            <div class="skill-card">
+                <img src="image/js.png" alt="JavaScript Logo">
+                <h3>JavaScript</h3>
+                <div class="progress-bar">
+                    <div class="progress js"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimoni" class="testimoni">
+      <h2 class="judul-testimoni">Testimoni</h2>
+      <div class="isi-testimoni">
+          <article class="testimoni-item">
+              <p>“Desain yang sangat profesional dan responsif. 
+                Sangat senang bekerja dengan Anda!”</p>
+              <h4>~ Budi,XYZ Agency</h4>
+          </article>
+          <article class="testimoni-item">
+              <p>“Cepat tanggap dan kreatif! Sangat merekomendasikan untuk proyek desain.”</p>
+              <h4>~ Siti, Startup ABC</h4>
+          </article>
+          <article class="testimoni-item">
+              <p>“Hasil desain yang sangat sesuai dengan ekspektasi saya. Kualitas terbaik!”</p>
+              <h4>~ Andy, Freelance Client</h4>
+          </article>
+      </div>
+    </section>
+
+    <section class="portofolio" id="portofolio">
+        <h2 class="portofolio-title">Portofolio</h2>
+        <div class="portofolio-container">
+            <div class="portofolio-item">
+                <img src="image/wanderplace.jpg" alt="Wanderplace">
+                <h3>WANDERPLACE</h3>
+            </div>
+            <div class="portofolio-item">
+                <img src="image/cosmo.jpg" alt="Cosmo Game">
+                <h3>Cosmo Game</h3>
+            </div>
+            <div class="portofolio-item">
+                <img src="image/ecoin.jpg" alt="E-COINS">
+                <h3>E-COINS</h3>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="contact-container">
+            <div class="contact-image">
+                <img src="image/poto3.png">
+            </div>
+            <div class="contact-form">
+                <h2 class="contact-title"><span>Contact</span> me</h2>
+                <form action="#" method="post">
+                    <input type="text" name="nama" placeholder="Nama" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <textarea name="pesan" placeholder="Pesan" required></textarea>
+                    <button type="submit">Kirim</button>
+                </form>
+            </div>
+        </div>
+    </section>    
+
+  </main>
+
+  <footer class="footer">
+    <nav class="footer-menu">
+        <a href="#">Home</a>
+        <a href="#about">About</a>
+        <a href="#keahlian">Keahlian</a>
+        <a href="#portofolio">Portofolio</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <p class="footer-text">© 2025 Guna Pandu Prilana. All rights reserved</p>
+</footer>
+
+</body>
+</html>
