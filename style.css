@@ -7,7 +7,7 @@ html {
 }
 
 body {
-    font-family: 'Quicksand', 'Poppin', sans-serif;
+    font-family: 'Quicksand', 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     display: flex;
@@ -19,6 +19,8 @@ header.navbar {
     width: 100%;
     max-width: 1200px;
     padding-block: 0.5rem;
+    padding-left: 20px;
+    padding-right: 20px;
     margin-inline: auto;
     display: flex;
     justify-content: space-between;
@@ -27,6 +29,7 @@ header.navbar {
     position: sticky;
     top: 0;
     backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.95);
 }
 
 header.navbar .logo a {
@@ -34,8 +37,8 @@ header.navbar .logo a {
     font-size: xx-large;
     text-decoration: none;
     color: #03045e;
-    padding-left: 20px;
 }
+
 
 header.navbar .nav-list ul {
     display: flex;
@@ -62,11 +65,19 @@ header.navbar .nav-list li:hover a {
     color: white;
 }
 
+header.navbar .nav-list .highlight {
+    border: 3px solid #03045e;
+    font-weight: 700;
+    padding: 0.5rem 1rem;
+    animation: shadow-pulse 1.5s infinite;
+}
+
 header.navbar .nav-list .highlight:hover {
     background-color: #03045e;
     color: white;
     box-shadow: 0px 0px 15px 5px #03045e;
 }
+
 
 .hamburger {
     display: none;
@@ -111,12 +122,12 @@ header.navbar .nav-list .highlight:hover {
 .mobile-menu {
     position: fixed;
     top: 0;
-    right: -100%;
+    right: 0;
     height: 100vh;
     width: 250px;
     background-color: #03045e;
     box-shadow: -3px 0 6px rgba(0, 0, 0, 0.2);
-    display: flex;
+    display: none;
     flex-direction: column;
     padding: 4rem 2rem;
     transition: right 0.3s ease-in-out;
@@ -124,7 +135,8 @@ header.navbar .nav-list .highlight:hover {
 }
 
 .mobile-menu.open {
-    right: 0;
+    display: flex;
+
 }
 
 .mobile-menu ul {
@@ -675,83 +687,83 @@ main .content .image img {
 
 @media (max-width: 768px) {
     header.navbar .nav-list ul {
-            display: none;
-        }
-    
-        .hamburger {
-            display: flex;
-        }
-
-        main {
-            padding: 1.5rem;
-        }
-    
-        main .content {
-            flex-direction: column;
-            padding-bottom: 0px;
-        }
-    
-        main .content .isi-content .title {
-            font-size: 2rem;
-        }
-    
-        main .content .isi-content p {
-            font-size: 1.1rem;
-        }
-    
-        main .content .image img {
-            display: none;
-        }
-    
-        .button-container {
-            flex-direction: column;
-            text-align: center;
-            gap: 0px;
-        }
-    
-        .about-container {
-            flex-direction: column;
-            gap: 1.5rem;
-            text-align: center;
-        }
-    
-        .about-image {
-            width: 80%;
-        }
-    
-        .skill-container {
-            gap: 1rem;
-            justify-content: center;
-        }
-    
-        .skill-card {
-            width: 80%;
-        }
-    
-        .skill-card img {
-            width: 8rem;
-            margin-bottom: 10px;
-        }
-    
-        .portofolio-item {
-            width: 90%;
-        }
-    
-        .contact-container {
-            flex-direction: column;
-            text-align: center;
-            padding: 0px;
-        }
-    
-        .contact-image img {
-            width: 100%;
-        }
-    
-        .contact-form {
-            width: 100%;
-        }
-    
-        .footer-menu {
-            display: none;
-        }
+        display: none;
     }
+
+    .hamburger {
+        display: flex;
+    }
+
+    main {
+        padding: 1.5rem;
+    }
+
+    main .content {
+        flex-direction: column;
+        padding-bottom: 0px;
+    }
+
+    main .content .isi-content .title {
+        font-size: 2rem;
+    }
+
+    main .content .isi-content p {
+        font-size: 1.1rem;
+    }
+
+    main .content .image img {
+        display: none;
+    }
+
+    .button-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 0px;
+    }
+
+    .about-container {
+        flex-direction: column;
+        gap: 1.5rem;
+        text-align: center;
+    }
+
+    .about-image {
+        width: 80%;
+    }
+
+    .skill-container {
+        gap: 1rem;
+        justify-content: center;
+    }
+
+    .skill-card {
+        width: 80%;
+    }
+
+    .skill-card img {
+        width: 8rem;
+        margin-bottom: 10px;
+    }
+
+    .portofolio-item {
+        width: 90%;
+    }
+
+    .contact-container {
+        flex-direction: column;
+        text-align: center;
+        padding: 0px;
+    }
+
+    .contact-image img {
+        width: 100%;
+    }
+
+    .contact-form {
+        width: 100%;
+    }
+
+    .footer-menu {
+        display: none;
+    }
+}
